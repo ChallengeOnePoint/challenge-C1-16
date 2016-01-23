@@ -1,1 +1,3 @@
-angular.module('Carnet', [])
+angular.module('CarnetNiel', ['ui.router'])
+
+$urlRouterProvider.otherwise("/homepage");

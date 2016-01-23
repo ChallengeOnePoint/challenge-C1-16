@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>New Sails App</title>
+    <title>Carnet de bord</title>
 
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -36,7 +36,7 @@
   <body>
     <%- body %>
 
-
+  <input type="text" placeholder="Nom de l'utilisateur" ng-model="query">
 
     <!--
         Client-side Templates
@@ -88,9 +88,12 @@
     -->
 
     <!--SCRIPTS-->
+    <script src="/bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8" async defer></script>
     <script src="/js/dependencies/sails.io.js"></script>
     <script src="/js/app.js"></script>
     <script src="/js/controller/MainController.js"></script>
+    <script src="/js/directives/main.directive.js"></script>
+    <script src="/js/service/main.service.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>
