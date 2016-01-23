@@ -1,6 +1,7 @@
 angular.module('CarnetNiel', [])
-	.factory('myfactory', ['', function(){
-		return function name(){
+	.factory('FactoryInput', function(){
+		return function getdata(){
 			
 		};
+	}])
 	}])
